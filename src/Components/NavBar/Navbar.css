@@ -1,6 +1,6 @@
 .nav-bar {
   height: 50px;
-  background-color: rgb(171, 171, 223);
+  
   display: flex;
   list-style-type: none;
   justify-content: flex-end;
@@ -19,4 +19,19 @@ a {
 .active {
   color: rgb(219, 124, 124);
 }
+
+.header-div {
+  display: flex;
+  background-color: rgb(171, 171, 223);
+
+}
+
+.header-div .header{
+  flex: 5
+}
+
+.header-div .nav-bar {
+  flex:5
+}
+
 

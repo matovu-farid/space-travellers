@@ -3,8 +3,8 @@ import './Navbar.css';
 import Header from '../Header/Header';
 
 const Navbar = () => (
-  <div>
-    <Header />
+  <div className="header-div">
+    <Header className="header" />
     <ul className="nav-bar">
       <li>
         <NavLink to="/">Rockets</NavLink>
