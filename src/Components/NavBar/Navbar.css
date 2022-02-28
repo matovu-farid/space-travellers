@@ -1,0 +1,23 @@
+.nav-bar {
+  height: 50px;
+  background-color: rgb(171, 171, 223);
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+}
+
+.nav-bar li {
+  margin: 5px 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.active {
+  color: rgb(219, 124, 124);
+}
+
+.non-active {
+  color: green;
+}

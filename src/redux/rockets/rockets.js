@@ -1,3 +1,3 @@
-const rocketsReducer = (state) => state;
+const rocketsReducer = (state = []) => state;
 
 export default rocketsReducer;

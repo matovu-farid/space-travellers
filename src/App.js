@@ -1,8 +1,13 @@
 import './App.css';
+import MainRoutes from './Components/MainRoutes/MainRoutes';
+import Navbar from './Components/NavBar/Navbar';
 
 function App() {
   return (
-    <div>Hello world</div>
+    <div>
+      <Navbar />
+      <MainRoutes />
+    </div>
   );
 }
 
