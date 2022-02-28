@@ -1,3 +1,4 @@
+import TableItem from '../../Components/Table-Item/TableItem';
 import './MyProfile.css';
 
 const MyProfile = () => {
@@ -38,26 +39,25 @@ const MyProfile = () => {
     },
   ];
   return (
-    <div className="profile-table">
-      <div className="mission-table">
-        <h3>My Missions</h3>
-        <ul>
-          {missions.map((mission) => (
-            <li key={mission.id}>
-              {mission.name}
-            </li>
-          ))}
-        </ul>
-      </div>
-      <div className="rockets-table">
-        <h3>My Rockets</h3>
-        <ul>
-          {rockets.map((rocket) => (
-            <li key={rocket.id}>
-              {rocket.name}
-            </li>
-          ))}
-        </ul>
+    <div className="center-container">
+
+      <div className="profile-table table">
+        <div className="mission-table">
+          <h3>My Missions</h3>
+          <ul>
+            {missions.map(({ name, id }) => (
+              <TableItem name={name} key={id} />
+            ))}
+          </ul>
+        </div>
+        <div className="rockets-table table">
+          <h3>My Rockets</h3>
+          <ul>
+            {rockets.map(({ name, id }) => (
+              <TableItem name={name} key={id} />
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );
