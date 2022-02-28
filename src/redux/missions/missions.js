@@ -1,3 +1,3 @@
-const missionsReducer = (state) => state;
+const missionsReducer = (state = []) => state;
 
 export default missionsReducer;
