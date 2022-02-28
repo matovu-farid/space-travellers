@@ -33,3 +33,9 @@
   margin: 0;
   font-weight: bold;
 }
+
+button.reserved {
+  background-color: white;
+  color: grey;
+  border: 1.5px solid grey;
+}
