@@ -2,8 +2,6 @@
   width: 150px;
   height: 150px;
   object-fit: fill;
-  
-
 }
 
 .rocket-image {
@@ -12,12 +10,8 @@
 
 .rocket-item {
   display: flex;
-  
   margin: 5px 0;
-
 }
-
-
 
 .rocket-item button {
   background-color: var(--accent-color);

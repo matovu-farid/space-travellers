@@ -1,5 +1,4 @@
 import RocketItem from '../../Components/RocketItem/RocketItem';
-import './Rockets.css';
 
 const Rockets = () => {
   const data = [

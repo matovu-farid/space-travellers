@@ -12,3 +12,13 @@ ul {
   align-items: center;
   justify-content: center;
 }
+
+:root {
+  --accent-color: #007bff;
+}
+
+button {
+  border: none;
+  padding: 1em;
+  border-radius: 5px;
+}
