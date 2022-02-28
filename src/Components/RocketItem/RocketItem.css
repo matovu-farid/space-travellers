@@ -1,0 +1,35 @@
+.rocket-image img {
+  width: 150px;
+  height: 150px;
+  object-fit: fill;
+  
+
+}
+
+.rocket-image {
+  margin-right: 10px;
+}
+
+.rocket-item {
+  display: flex;
+  
+  margin: 5px 0;
+
+}
+
+
+
+.rocket-item button {
+  background-color: var(--accent-color);
+  font-size: 0.8rem;
+  color: white;
+}
+
+.rocket-item .description {
+  font-size: 0.8rem;
+}
+
+.rocket-item .name {
+  margin: 0;
+  font-weight: bold;
+}
