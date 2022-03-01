@@ -1,40 +1,8 @@
+import { useSelector } from 'react-redux';
 import './Missions.css';
 
 const Missions = () => {
-  const missions = [
-    {
-      name: 'Thaicom',
-      description:
-        ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt debitis beatae quia doloribus delectus consequatur quidem, provident explicabo ab quisquam!',
-      id: 1,
-      status: 'NOT A MEMBER',
-      join: 'Join Mission',
-    },
-    {
-      name: 'Tesla',
-      description:
-        ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt debitis beatae quia doloribus delectus consequatur quidem, provident explicabo ab quisquam!',
-      id: 2,
-      status: 'NOT A MEMBER',
-      join: 'Join Mission',
-    },
-    {
-      name: 'Iriduim Next',
-      description:
-        ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt debitis beatae quia doloribus delectus consequatur quidem, provident explicabo ab quisquam!',
-      id: 3,
-      status: 'NOT A MEMBER',
-      join: 'Join Mission',
-    },
-    {
-      name: 'Commercial Resupply Services',
-      description:
-        ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt debitis beatae quia doloribus delectus consequatur quidem, provident explicabo ab quisquam!',
-      id: 4,
-      status: 'NOT A MEMBER',
-      join: 'Join Mission',
-    },
-  ];
+  const missionData = useSelector((state) => state.missions);
 
   return (
     <div className="main-container">
@@ -46,19 +14,15 @@ const Missions = () => {
             <h3 className="h-status n">Status</h3>
             <h3 className="h-join n">|</h3>
           </div>
-          {missions.map((mission) => (
-            <li key={mission.id} className="li-content">
-              <div className="content name">{mission.name}</div>
-              <div className="content des">{mission.description}</div>
+          {missionData.map(({ id, name, description }) => (
+            <li key={id} className="li-content">
+              <div className="content name">{name}</div>
+              <div className="content des">{description}</div>
               <div className="content status center-container">
-                <button type="button" className="btn1">
-                  {mission.status}
-                </button>
+                <button type="button" className="btn1">NOT A MEMBER</button>
               </div>
               <div className="content join center-container">
-                <button type="button" className="btn2">
-                  {mission.join}
-                </button>
+                <button type="button" className="btn2">Join mission</button>
               </div>
             </li>
           ))}
