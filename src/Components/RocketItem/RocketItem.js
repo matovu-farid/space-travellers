@@ -2,13 +2,12 @@ import './RocketItem.css';
 import propTypes from 'prop-types';
 
 import { useDispatch } from 'react-redux';
-import { reserveRocket } from '../../redux/rockets/rockets';
+import { cancelReservedRocket, reserveRocket } from '../../redux/rockets/rockets';
 
 const RocketItem = ({
   name, description, image, reserved, id,
 }) => {
   const dispatch = useDispatch();
-  const onClick = () => dispatch(reserveRocket(id));
 
   return (
     <li className="rocket-item">
@@ -29,8 +28,8 @@ const RocketItem = ({
             ) : description}
 
         </p>
-        {(reserved) ? <button className="reserved" onClick={onClick} type="button">Cancel reservation</button>
-          : <button type="button" onClick={onClick}>Reserve Rocket</button>}
+        {(reserved) ? <button className="reserved" onClick={() => dispatch(cancelReservedRocket(id))} type="button">Cancel reservation</button>
+          : <button type="button" onClick={() => dispatch(reserveRocket(id))}>Reserve Rocket</button>}
 
       </div>
     </li>
