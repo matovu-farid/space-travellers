@@ -1,4 +1,5 @@
 const FETCHDATA = 'space-travellers/rockets/fetch';
+const RESERVE = 'space-travellers/rockets/reserve';
 
 const url = 'https://api.spacexdata.com/v3/rockets';
 export const fetchData = () => async (dispatch) => {
@@ -18,6 +19,10 @@ export const fetchData = () => async (dispatch) => {
 const rocketsReducer = (state = [], action) => {
   switch (action.type) {
     case FETCHDATA: return action.payload;
+    case RESERVE: return state.map((rocket) => (
+      rocket.id === action.payload
+        ? { ...rocket, reserved: !rocket.reserved }
+        : rocket));
     default: return state;
   }
 };
