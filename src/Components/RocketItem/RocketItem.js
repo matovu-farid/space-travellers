@@ -23,7 +23,7 @@ const RocketItem = ({
           {(reserved)
             ? (
               <>
-                <span className="reserved-badge">reserved</span>
+                <span className="reserved-badge">Reserved</span>
                 <span>{description}</span>
               </>
             ) : description}
