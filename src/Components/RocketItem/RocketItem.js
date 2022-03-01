@@ -18,7 +18,17 @@ const RocketItem = ({
       <div className="rocket-info">
 
         <p className="name">{name}</p>
-        <p className="description">{description}</p>
+
+        <p className="description">
+          {(reserved)
+            ? (
+              <>
+                <span className="reserved-badge">reserved</span>
+                <span>{description}</span>
+              </>
+            ) : description}
+
+        </p>
         {(reserved) ? <button className="reserved" onClick={onClick} type="button">Cancel reservation</button>
           : <button type="button" onClick={onClick}>Reserve Rocket</button>}
 

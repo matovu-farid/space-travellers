@@ -1,3 +1,4 @@
+import { useSelector } from 'react-redux';
 import TableItem from '../../Components/Table-Item/TableItem';
 import './MyProfile.css';
 
@@ -24,20 +25,8 @@ const MyProfile = () => {
       id: '5',
     },
   ];
-  const rockets = [
-    {
-      name: 'Tesla',
-      id: '1',
-    },
-    {
-      name: 'Andromeda',
-      id: '2',
-    },
-    {
-      name: 'Blue moon',
-      id: '3',
-    },
-  ];
+
+  const rockets = useSelector((state) => state.rockets).filter(({ reserved }) => reserved);
   return (
     <div className="center-container">
 
