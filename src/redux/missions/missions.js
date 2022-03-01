@@ -1,6 +1,4 @@
 const FETCHMISSIONDATA = 'space-travellers/missions/fetch';
-// const RESERVE = 'space-travellers/missions/reserve';
-// const CANCELRESERVATION = 'space-travellers/missions/cancel-reservation';
 
 const url = 'https://api.spacexdata.com/v3/missions';
 export const fetchMissionData = () => async (dispatch) => {
@@ -11,22 +9,13 @@ export const fetchMissionData = () => async (dispatch) => {
       id,
       name,
       description,
-    }),
+    })
   );
   dispatch({
     type: FETCHMISSIONDATA,
     payload,
   });
 };
-
-// export const reserveRocket = (payload) => ({
-//   type: RESERVE,
-//   payload,
-// });
-// export const cancelReservedRocket = (payload) => ({
-//   type: CANCELRESERVATION,
-//   payload,
-// });
 
 const missionsReducer = (state = [], action) => {
   switch (action.type) {
