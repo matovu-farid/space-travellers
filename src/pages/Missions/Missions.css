@@ -1,0 +1,89 @@
+.table-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-container {
+  display: flex;
+}
+
+.h-name {
+  flex: 1.5;
+}
+
+.h-des {
+  flex: 6;
+}
+
+.h-status {
+  flex: 1.5;
+}
+
+.h-join {
+  flex: 2;
+  color: #fff;
+}
+
+.n {
+  height: 30px;
+  margin: 0;
+  border-left: 1px solid rgb(129, 126, 126);
+  padding-left: 5px;
+}
+
+.ul-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.Btn-li {
+  display: flex;
+}
+
+.table-container ul {
+  border: 1px solid rgb(129, 126, 126);
+}
+
+.li-content:nth-child(even) {
+  background-color: rgba(148, 147, 147, 0.502);
+}
+
+.table-container ul li {
+  border: 1px solid rgb(129, 126, 126);
+  display: flex;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  flex: 1.5;
+  margin: 0;
+}
+
+.des {
+  flex: 6;
+}
+
+.content {
+  border-left: 1px solid rgb(129, 126, 126);
+  height: 100px;
+  padding-left: 5px;
+}
+
+.status {
+  flex: 1.5;
+}
+
+.join {
+  flex: 2;
+}
+
+.btn1 {
+  background-color: rgb(129, 126, 126);
+  font-size: 11px;
+}
+
+.btn2 {
+  font-size: 15px;
+}
