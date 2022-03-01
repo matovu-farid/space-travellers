@@ -11,6 +11,7 @@ const Rockets = () => {
         }) => (
           <RocketItem
             key={id}
+            id={id}
             name={name}
             description={description}
             image={images[0]}

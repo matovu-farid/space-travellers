@@ -16,6 +16,11 @@ export const fetchData = () => async (dispatch) => {
   });
 };
 
+export const reserveRocket = (payload) => ({
+  type: RESERVE,
+  payload,
+});
+
 const rocketsReducer = (state = [], action) => {
   switch (action.type) {
     case FETCHDATA: return action.payload;
