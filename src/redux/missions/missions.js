@@ -9,7 +9,7 @@ export const fetchMissionData = () => async (dispatch) => {
       id,
       name,
       description,
-    })
+    }),
   );
   dispatch({
     type: FETCHMISSIONDATA,
