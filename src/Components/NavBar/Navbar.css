@@ -1,10 +1,8 @@
 .nav-bar {
   height: 50px;
-  
   display: flex;
   list-style-type: none;
   justify-content: flex-end;
- 
 }
 
 .nav-bar li {
@@ -23,15 +21,12 @@ a {
 .header-div {
   display: flex;
   background-color: rgb(171, 171, 223);
-
 }
 
-.header-div .header{
-  flex: 5
+.header-div .header {
+  flex: 5;
 }
 
 .header-div .nav-bar {
-  flex:5
+  flex: 5;
 }
-
-
