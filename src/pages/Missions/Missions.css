@@ -74,11 +74,17 @@
 
 .status {
   flex: 1.5;
-  text-align: center;
-  justify-self: center;
 }
 
 .join {
   flex: 2;
-  text-align: center;
+}
+
+.btn1 {
+  background-color: rgb(129, 126, 126);
+  font-size: 11px;
+}
+
+.btn2 {
+  font-size: 15px;
 }

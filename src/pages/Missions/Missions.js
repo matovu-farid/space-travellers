@@ -50,11 +50,15 @@ const Missions = () => {
             <li key={mission.id} className="li-content">
               <div className="content name">{mission.name}</div>
               <div className="content des">{mission.description}</div>
-              <div className="content status">
-                <button type="button">{mission.status}</button>
+              <div className="content status center-container">
+                <button type="button" className="btn1">
+                  {mission.status}
+                </button>
               </div>
-              <div className="content join">
-                <button type="button">{mission.join}</button>
+              <div className="content join center-container">
+                <button type="button" className="btn2">
+                  {mission.join}
+                </button>
               </div>
             </li>
           ))}
