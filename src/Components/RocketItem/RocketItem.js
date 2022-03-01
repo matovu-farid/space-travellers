@@ -17,7 +17,17 @@ const RocketItem = ({
       <div className="rocket-info">
 
         <p className="name">{name}</p>
-        <p className="description">{description}</p>
+
+        <p className="description">
+          {(reserved)
+            ? (
+              <>
+                <span className="reserved-badge">Reserved</span>
+                <span>{description}</span>
+              </>
+            ) : description}
+
+        </p>
         {(reserved) ? <button className="reserved" onClick={() => dispatch(cancelReservedRocket(id))} type="button">Cancel reservation</button>
           : <button type="button" onClick={() => dispatch(reserveRocket(id))}>Reserve Rocket</button>}
 
