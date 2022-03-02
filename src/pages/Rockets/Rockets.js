@@ -1,10 +1,11 @@
 import { useSelector } from 'react-redux';
 import RocketItem from '../../Components/RocketItem/RocketItem';
+import './Rockets.css';
 
 const Rockets = () => {
   const data = useSelector((state) => state.rockets);
   return (
-    <div>
+    <div className="rockets-container">
       <ul>
         {data.map(({
           name, description, id, images, reserved,
