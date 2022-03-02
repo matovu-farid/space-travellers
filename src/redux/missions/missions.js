@@ -12,7 +12,7 @@ export const fetchMissionData = () => async (dispatch) => {
       id,
       name,
       description,
-      reserved: true,
+      reserved: false,
     }),
   );
   dispatch({
@@ -42,11 +42,11 @@ const missionsReducer = (state = [], action) => {
       return action.payload;
     case JOINMISSION:
       return state.map((mission) => (mission.id === action.payload
-        ? { ...mission, reserved: false }
+        ? { ...mission, reserved: true }
         : mission));
     case LEAVEMISSION:
       return state.map((mission) => (mission.id === action.payload
-        ? { ...mission, reserved: true }
+        ? { ...mission, reserved: false }
         : mission));
 
     case ACTIVEMEMBER:
