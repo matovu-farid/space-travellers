@@ -82,8 +82,21 @@
 .btn1 {
   background-color: rgb(129, 126, 126);
   font-size: 11px;
+  color: #fff;
+  padding: 6px;
 }
 
 .btn2 {
   font-size: 15px;
+}
+
+.leave-btn {
+  color: red;
+  border: 1px solid red;
+}
+
+.active-btn {
+  background-color: rgb(72, 144, 228);
+  color: #fff;
+  padding: 6px;
 }
