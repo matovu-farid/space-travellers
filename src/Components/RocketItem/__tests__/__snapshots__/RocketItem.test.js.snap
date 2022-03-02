@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<li
+  className="rocket-item"
+>
+  <div
+    className="rocket-image"
+  >
+    <img
+      alt="Falcon 1"
+      src="https://imgur.com/DaCfMsj.jpg"
+    />
+  </div>
+  <div
+    className="rocket-info"
+  >
+    <p
+      className="name"
+    >
+      Falcon 1
+    </p>
+    <p
+      className="description"
+    >
+      <span
+        className="reserved-badge"
+      >
+        Reserved
+      </span>
+      <span>
+        Great rocket
+      </span>
+    </p>
+    <button
+      className="reserved"
+      onClick={[Function]}
+      type="button"
+    >
+      Cancel reservation
+    </button>
+  </div>
+</li>
+`;
