@@ -17,6 +17,7 @@ function App() {
   return (
     <div>
       <Navbar />
+      <hr />
       <MainRoutes />
     </div>
   );

@@ -39,7 +39,7 @@ const Missions = () => {
                 )}
               </div>
               <div className="content join center-container">
-                {reserved ? (
+                {!reserved ? (
                   <button
                     type="button"
                     className="btn2"
