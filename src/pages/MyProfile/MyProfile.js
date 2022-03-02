@@ -3,36 +3,12 @@ import TableItem from '../../Components/Table-Item/TableItem';
 import './MyProfile.css';
 
 const MyProfile = () => {
-  // const missions = [
-  //   {
-  //     name: 'Russia',
-  //     id: '1',
-  //   },
-  //   {
-  //     name: 'Norway',
-  //     id: '2',
-  //   },
-  //   {
-  //     name: 'Canada',
-  //     id: '3',
-  //   },
-  //   {
-  //     name: 'Mexico',
-  //     id: '4',
-  //   },
-  //   {
-  //     name: 'Cuba',
-  //     id: '5',
-  //   },
-  // ];
-
   const rockets = useSelector((state) => state.rockets).filter(
     ({ reserved }) => reserved,
   );
   const missions = useSelector((state) => state.missions).filter(
     ({ reserved }) => reserved,
   );
-  // const dispatch = useDispatch();
   return (
     <div className="center-container">
       <div className="profile-table table">
