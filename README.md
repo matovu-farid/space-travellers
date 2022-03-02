@@ -2,13 +2,16 @@
 
 # space-travellers
 
+## Live preview from [Netlify](https://space-travellers-farid-anny.netlify.app/)
+
 This a space-travellers website
 
 ## Description
 
 Space-travellers is an app that shows rockets and their missions. It is built using React and Redux
 
-![screenshot](./screenshot.PNG)
+![rockets-image](https://user-images.githubusercontent.com/87186552/156379820-3e11ea74-556f-41a2-963f-244ed33f7faf.png)
+![mission-image](https://user-images.githubusercontent.com/87186552/156380815-6e45ebb6-30c8-451b-8fb7-82eadacda7e5.png)
 
 ## Built With
 
