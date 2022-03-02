@@ -1,3 +1,7 @@
+.main-container{
+  margin: 0 10px 0 10px;
+}
+
 .table-container {
   display: flex;
   flex-direction: row;
@@ -96,7 +100,7 @@
 }
 
 .active-btn {
-  background-color: rgb(72, 144, 228);
+  background-color: rgb(43, 175, 236);
   color: #fff;
   padding: 6px;
 }

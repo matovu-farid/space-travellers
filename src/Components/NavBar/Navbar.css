@@ -11,7 +11,7 @@
 
 a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: rgb(43, 175, 236);
 }
 
 .active {
@@ -20,7 +20,7 @@ a {
 
 .header-div {
   display: flex;
-  background-color: rgb(171, 171, 223);
+  padding: 10px 10px 0 10px;
 }
 
 .header-div .header {
