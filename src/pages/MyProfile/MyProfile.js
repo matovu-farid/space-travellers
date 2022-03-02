@@ -9,7 +9,6 @@ const MyProfile = () => {
   const missions = useSelector((state) => state.missions).filter(
     ({ reserved }) => reserved,
   );
-
   return (
     <div className="center-container">
       <div className="profile-table table">
