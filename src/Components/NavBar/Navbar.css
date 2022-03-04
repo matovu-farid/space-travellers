@@ -1,0 +1,32 @@
+.nav-bar {
+  height: 50px;
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+}
+
+.nav-bar li {
+  margin: 5px 10px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(43, 175, 236);
+}
+
+.active {
+  color: rgb(219, 124, 124);
+}
+
+.header-div {
+  display: flex;
+  padding: 10px 10px 0 20px;
+}
+
+.header-div .header {
+  flex: 5;
+}
+
+.header-div .nav-bar {
+  flex: 5;
+}

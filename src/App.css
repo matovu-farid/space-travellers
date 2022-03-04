@@ -1,0 +1,25 @@
+li {
+  list-style-type: none;
+}
+
+ul {
+  padding-left: 0;
+}
+
+.center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+:root {
+  --accent-color: #007bff;
+}
+
+button {
+  border: none;
+  padding: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
