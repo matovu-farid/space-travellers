@@ -8,8 +8,7 @@ This a space-travellers website
 
 ## Description
 
-Space-travellers is an app that shows rockets and their missions. It is built using React and Redux
-
+pace Traveler's website was built with real live data from the SpaceX API. The application provides commercial and scientific space travel services that allow users book rockets and join selected space missions.
 ![rockets-image](https://user-images.githubusercontent.com/87186552/156379820-3e11ea74-556f-41a2-963f-244ed33f7faf.png)
 ![mission-image](https://user-images.githubusercontent.com/87186552/156380815-6e45ebb6-30c8-451b-8fb7-82eadacda7e5.png)
 
